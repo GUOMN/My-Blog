@@ -14,7 +14,7 @@
     <!--<version>1.0.1-SNAPSHOT</version>-->
     <!-- docker -->
     <!--<version>2.0.1-SNAPSHOT</version>-->
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>my-blog</name>
     <description>my-blog</description>
@@ -163,12 +163,31 @@
 
     <!-- 普通的maven打包方式 -->
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>my-blog</finalName>
     </build>
     <!-- 普通的maven打包方式 -->
 
