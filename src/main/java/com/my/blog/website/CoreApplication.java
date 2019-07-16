@@ -41,10 +41,10 @@ public class CoreApplication extends SpringBootServletInitializer {
         return new DataSourceTransactionManager(dataSource());
     }
 
-//    @Override
-//    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-//        return builder.sources(CoreApplication.class);
-//    }
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(CoreApplication.class);
+    }
 
 
     public static void main(String[] args) {
