@@ -14,33 +14,7 @@ My Blog是由Docker+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客系�
 
 演示站点：https://blog.guomn.cn
 
-[![Build Status](https://travis-ci.org/ZHENFENG13/My-Blog.svg?branch=master)](https://travis-ci.org/ZHENFENG13/My-Blog)
-![Version 3.2.0](https://img.shields.io/badge/version-3.2.0-yellow.svg)
 [![License](https://img.shields.io/badge/license-apache-blue.svg)](https://github.com/ZHENFENG13/My-Blog/blob/master/LICENSE)
-
-#### 宣传
-
-十三近期于CSDN上传了一份自己制作的达人课课程,感兴趣的朋友可以看一下：
-
-* [x] [GitChat达人课-SSM搭建精美实用的管理系统](https://gitbook.cn/gitchat/column/5b4dae389bcda53d07056bc9)
-
-![gitchat](https://raw.githubusercontent.com/ZHENFENG13/resource/master/images/2018-07-19/gitchat.png)
-
-#### 相关博客文章
-
-* [x] [Docker+SpringBoot+Mybatis+thymeleaf的Java博客系统开源啦](http://www.cnblogs.com/han-1034683568/p/6840493.html)
-* [x] [My-Blog搭建过程：如何让一个网站从零到可以上线访问](http://www.cnblogs.com/han-1034683568/p/6885545.html)
-* [x] [利用Dockerfile构建mysql镜像并实现数据的初始化及权限设置](http://www.cnblogs.com/han-1034683568/p/6941337.html)
-* [x] [Java开源博客My-Blog之docker容器组件化修改](http://www.cnblogs.com/han-1034683568/p/7102765.html)
-* [x] [Java开源博客My-Blog之mysql容器重复初始化的严重bug修复过程](http://www.cnblogs.com/han-1034683568/p/7231895.html)
-* [x] [Springboot与Thymeleaf模板引擎整合基础教程](http://www.cnblogs.com/han-1034683568/p/7520012.html)
-* [x] [thymeleaf模板引擎调用java类中的方法](http://www.cnblogs.com/han-1034683568/p/7527564.html)
-
-#### 捐赠
-
-**网站的持续运行需要各项基础设施的搭建，而服务期的续费和维护及各种配套服务的购买也需要一定的费用，希望朋友们给予一点支持，谢谢！**
-
-**支付宝：**<img src="https://raw.githubusercontent.com/ZHENFENG13/resource/master/images/2018-02-27/zhifubao1.jpg" width = "200" height = "200" alt="zhifubao"/>**微信支付：**<img src="https://raw.githubusercontent.com/ZHENFENG13/resource/master/images/2018-02-27/wxpay.jpg" width = "200" height = "200" alt="wxpay"/>
 
 # Quick Start
 
@@ -55,19 +29,6 @@ My Blog是由Docker+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客系�
 * [x] [5.博客上线及备案相关流程](https://github.com/ZHENFENG13/My-Blog/wiki/%E4%B8%8A%E7%BA%BF%E5%8F%8A%E5%A4%87%E6%A1%88%E7%9B%B8%E5%85%B3)
 
 [**常见问题**](https://github.com/ZHENFENG13/My-Blog/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
-
-# Preview
-
-**博客展示页1：**
-![My Blog](https://raw.githubusercontent.com/ZHENFENG13/resource/master/images/2018-06-13/my-blog-2.gif)
-**博客展示页2：**
-![My Blog](https://raw.githubusercontent.com/ZHENFENG13/resource/master/images/2018-06-13/my-blog-1.gif)
-**登录页：**
-![登录页](http://images2015.cnblogs.com/blog/859549/201705/859549-20170511122916004-738411708.png)
-**My Blog后台：**
-![My Blog](https://raw.githubusercontent.com/ZHENFENG13/resource/master/images/2018-06-13/My-Blog-admin-1.gif)
-**My Blog后台：**
-![My Blog](https://raw.githubusercontent.com/ZHENFENG13/resource/master/images/2018-06-13/My-Blog-admin-2.gif)
 
 # Log
 
