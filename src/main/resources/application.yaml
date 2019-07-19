@@ -2,3 +2,12 @@ spring.profiles.active: default
 
 server:
   port: 8080
+
+app:
+  attach.impl: OSS
+
+oss:
+  endpoint: http://oss-cn-hongkong.aliyuncs.com
+  bucketName: guomn-static-hk
+  accessKeyId: LTAIhwAymsaDJNuu
+  accessKeySecret: HGwZWwyqmxILauHQYYmlnBxMK9lXLj

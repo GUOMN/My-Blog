@@ -75,27 +75,7 @@ public class AttachController extends BaseController {
     public RestResponseBo upload(HttpServletRequest request, @RequestParam("file") MultipartFile[] multipartFiles) throws IOException {
         UserVo users = this.user(request);
         Integer uid = users.getUid();
-        List<String> errorFiles = new ArrayList<>();
-        try {
-            for (MultipartFile multipartFile : multipartFiles) {
-                String fname = multipartFile.getOriginalFilename();
-                if (multipartFile.getSize() <= WebConst.MAX_FILE_SIZE) {
-                    String fkey = TaleUtils.getFileKey(fname);
-                    String ftype = TaleUtils.isImage(multipartFile.getInputStream()) ? Types.IMAGE.getType() : Types.FILE.getType();
-                    File file = new File(CLASSPATH + fkey);
-                    try {
-                        FileCopyUtils.copy(multipartFile.getInputStream(), new FileOutputStream(file));
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    attachService.save(fname, fkey, ftype, uid);
-                } else {
-                    errorFiles.add(fname);
-                }
-            }
-        } catch (Exception e) {
-            return RestResponseBo.fail();
-        }
+        List<String> errorFiles = attachService.save(uid, multipartFiles);
         return RestResponseBo.ok(errorFiles);
     }
 

@@ -20,9 +20,9 @@ DROP TABLE IF EXISTS `t_attach`;
 
 CREATE TABLE `t_attach` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `fname` varchar(100) NOT NULL DEFAULT '',
+  `fname` varchar(255) NOT NULL DEFAULT '',
   `ftype` varchar(50) DEFAULT '',
-  `fkey` varchar(100) NOT NULL DEFAULT '',
+  `fkey` varchar(255) NOT NULL DEFAULT '',
   `author_id` int(10) DEFAULT NULL,
   `created` int(10) NOT NULL,
   PRIMARY KEY (`id`)

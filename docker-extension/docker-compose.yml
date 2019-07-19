@@ -10,7 +10,7 @@
 
 my-blog:
   image: blog/my-blog
-  ports:
+#  ports:
 #   - 28080:8080
 #  links:
 #   - mysql

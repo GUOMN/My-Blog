@@ -2,6 +2,8 @@ package com.my.blog.website.service;
 
 import com.github.pagehelper.PageInfo;
 import com.my.blog.website.model.Vo.AttachVo;
+import java.util.List;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * Created by wangq on 2017/3/20.
@@ -17,13 +19,10 @@ public interface IAttachService {
 
     /**
      * 保存附件
-     *
-     * @param fname
-     * @param fkey
-     * @param ftype
-     * @param author
      */
-    void save(String fname, String fkey, String ftype, Integer author);
+    List<String> save(Integer uid, MultipartFile[] multipartFiles);
+
+
 
     /**
      * 根据附件id查询附件
