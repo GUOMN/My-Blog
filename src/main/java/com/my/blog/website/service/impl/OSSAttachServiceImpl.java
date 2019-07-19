@@ -71,6 +71,7 @@ public class OSSAttachServiceImpl extends AbstractAttachServiceImpl {
           } catch (IOException e) {
             e.printStackTrace();
           }
+          // 数据库存储时附加域名信息
           save2db(fname, URL_PREFIX + fkey, ftype, uid);
         } else {
           errorFiles.add(fname);
@@ -86,7 +87,8 @@ public class OSSAttachServiceImpl extends AbstractAttachServiceImpl {
   @Transactional
   public void deleteById(Integer id) {
     if (null != id) {
-      deleteFile(selectById(id).getFkey());
+      String fkey = selectById(id).getFkey();
+      deleteFile(fkey.replace(URL_PREFIX, ""));
       attachDao.deleteByPrimaryKey(id);
     }
   }
