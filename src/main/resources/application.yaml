@@ -1,5 +1,6 @@
 spring.profiles.active: default
 
+
 server:
   port: 8080
 
@@ -11,3 +12,9 @@ oss:
   bucketName: guomn-static-hk
   accessKeyId: LTAIhwAymsaDJNuu
   accessKeySecret: HGwZWwyqmxILauHQYYmlnBxMK9lXLj
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      location: /tmp
+      max-file-size: 100M
